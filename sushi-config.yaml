@@ -7,16 +7,17 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
+id: hl7.fhir.be.consent
+canonical: https://www.ehealth.fgov.be/standards/fhir/consent
+url: https://www.ehealth.fgov.be/standards/fhir/consent
+name: Beconsent
+title: "HL7 Belgium Consent (Patient Dossier)"
+description: Belgian Patient profiles
 status: active
 license: CC0-1.0
 date: 2020-02-26
 version: 1.0.0
+releaseLabel: STU
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -30,30 +31,30 @@ fhirVersion: 4.0.1
 # will recognize them as well. In either case, they'll be copied
 # to the IG JSON using the formal names.
 copyrightYear: 2021+
-releaseLabel: STU1
+# releaseLabel: STU1
 
 # The publisher can be a single item or a list, each with a name and
 # optional url and/or email. The first publisher's name will be used
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: eHealth Platform
+  url: http://www.ehealth.fgov.be/
+  email: message-structure@ehealth.fgov.be
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Message Structure
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: message-structure@ehealth.fgov.be
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
 # code syntax can be used here.
 
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+jurisdiction: urn:iso:std:iso:3166#BE "Belgium" 
 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -128,10 +129,12 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # file name extension.  Any subproperties that are valid filenames
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
-#pages:
-#  index.md:
-#    title: Example Home
-#  implementation.xml:
+pages:
+  index.xml:
+    title: Home
+  guidance.md:
+    title: Guidance
+  changes.xml:
 #  examples.xml:
 #    title: Examples Overview
 #    simpleExamples.xml:
@@ -158,13 +161,16 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # currently only supports one level deep on sub-menus.
 # To provide a custom menu.xml file, do not include this property and
 # include a `menu.xml` file in input/includes.
-#menu:
-#  Home: index.html
-#  Artifacts:
-#    Profiles: artifacts.html#2
-#    Extensions: artifacts.html#3
-#    Value Sets: artifacts.html#4
+menu:
+  Home: index.html
+  Guidance: guidance.html
+  Artifacts:
+    Profiles: artifacts.html#2
+    Extensions: artifacts.html#3
+    Value Sets: artifacts.html#4
+  Changes: changes.html
 #  Downloads: downloads.html
+  
 #  History: http://hl7.org/fhir/us/example/history.html
 
 # The parameters property represents IG.definition.parameter. Rather
@@ -173,10 +179,15 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # values, the value in the YAML should be a sequence/array. For a
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-#parameters:
 #  excludettl: true
 #  validation: [allow-any-extensions, no-broken-links]
-
+parameters:
+  show-inherited-invariants: false
+  shownav: true
+  apply-contact: true
+  apply-jurisdiction: true
+  apply-publisher: true
+  apply-version: true
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
@@ -185,3 +196,8 @@ FSHOnly: false
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
 #applyExtensionMetadataToRoot: false
+
+dependencies:
+  hl7.fhir.be.core: 2.0.0
+
+    
