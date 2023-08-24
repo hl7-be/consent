@@ -7,11 +7,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: hl7.fhir.be.consent
-canonical: https://www.ehealth.fgov.be/standards/fhir/consent
-url: https://www.ehealth.fgov.be/standards/fhir/consent
-name: Beconsent
-title: "HL7 Belgium Consent (Patient Dossier)"
+id: hl7.fhir.be.patientwill
+canonical: https://www.ehealth.fgov.be/standards/fhir/patientwill
+url: https://www.ehealth.fgov.be/standards/fhir/patientwill
+name: BePatientwill
+title: "HL7 Belgium Patientwill (Patient Dossier)"
 description: Belgian Patient profiles
 status: draft
 license: CC0-1.0
