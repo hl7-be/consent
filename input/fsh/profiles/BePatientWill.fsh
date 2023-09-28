@@ -15,10 +15,10 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * ^contact[=].telecom.value = "message-structure@ehealth.fgov.be"
 * ^jurisdiction.coding[0] = $m49.htm#056
 * ^jurisdiction.coding[+] = urn:iso:std:iso:3166#BE
-* identifier MS
-* status MS
-* scope MS
-* category MS
+* identifier 0..* MS
+* status 1..1 MS
+* scope 1..1 MS
+* category 1..* MS
 * category from BeVSPatientWillCategory (required)
 * patient 1.. MS
 * patient only Reference(BePatient)
@@ -27,10 +27,10 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * dateTime 1.. MS
 * dateTime ^short = "The dateTime when the patient will has been recorded"
 * dateTime ^definition = "The date and/or time when the patient will has been recorded"
-* dateTime ^comment = "This is not the time the patient expressed their will, but the time that this patient was recorded.&#xD;&#xA;"
+* dateTime ^comment = "This is not the time the patient expressed their will, but the time that this patient will was recorded."
 * performer 1.. MS
 * performer only Reference(BeOrganization or BePatient or BePractitioner or BePractitionerRole or RelatedPerson)
-* performer ^comment = "Commonly, the patient will is expressed by the patient, but for some cases it may be some other person.&#xD;&#xA;"
+* performer ^comment = "Commonly, the patient will is expressed by the patient, but for some cases it may be some other person."
 * source[x] MS
 * source[x] ^short = "The evidence used to support the patient will."
 * source[x] ^definition = "Supporting evidence for the patient will (e.g. a paper signed by the patient to refuse a specific treatment)"

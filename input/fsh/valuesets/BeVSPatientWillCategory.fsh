@@ -14,4 +14,4 @@ Description: "Patient will category Value Set"
 * ^contact[=].telecom.value = "message-structure@ehealth.fgov.be"
 * ^jurisdiction.coding[0] = $m49.htm#056
 * ^jurisdiction.coding[+] = urn:iso:std:iso:3166#BE
-* include codes from system BeCSPAtientWillCategory
+* include codes from system BeCSPatientWillCategory
