@@ -30,9 +30,9 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * dateTime ^short = "The dateTime when the patient will has been recorded"
 * dateTime ^definition = "The date and/or time when the patient will has been recorded"
 * dateTime ^comment = "This is not the time the patient expressed their will, but the time that this patient will was recorded."
-* performer 1.. MS
+* performer 0.. MS
 * performer only Reference(BeOrganization or BePatient or BePractitioner or BePractitionerRole or RelatedPerson)
-* performer ^comment = "Commonly, the patient will is expressed by the patient, but for some cases it may be some other person."
+* performer ^short = "Commonly, the patient will is expressed by the patient, but for some cases it may be some other person. See representative in the LM"
 * source[x] MS
 * source[x] only Attachment
 * source[x] ^short = "The evidence used to support the patient will."
