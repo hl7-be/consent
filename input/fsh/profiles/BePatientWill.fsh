@@ -41,7 +41,6 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * policyRule.text MS
 * policyRule.text ^comment = "This field is added as a fixed value because in FHIR 4.0.1 this is technically required. It has no functional purpose in Belgium."
 * provision 1.. MS
-* provision.type MS
 * provision.period 1.. MS
 * provision.securityLabel ..0
 * provision.purpose ..0
