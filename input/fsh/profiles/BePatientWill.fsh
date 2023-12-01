@@ -34,9 +34,10 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * performer only Reference(BeOrganization or BePatient or BePractitioner or BePractitionerRole or RelatedPerson)
 * performer ^comment = "Commonly, the patient will is expressed by the patient, but for some cases it may be some other person."
 * source[x] MS
+* source[x] only Attachment
 * source[x] ^short = "The evidence used to support the patient will."
 * source[x] ^definition = "Supporting evidence for the patient will (e.g. a paper signed by the patient to refuse a specific treatment)"
-* source[x] ^comment = "The source can be contained inline (Attachment), referenced directly (Consent), referenced in a consent repository (DocumentReference), or simply by an identifier (Identifier), e.g. a CDA document id.&#xD;&#xA;It is at the discretion of the practitioner whether to include this when available. A consumer SHALL NOT ignore it when available."
+* source[x] ^comment = "The source can be contained inline, or using an URL (Attachment). It is at the discretion of the practitioner whether to include this when available. A consumer SHALL NOT ignore it when available."
 * policyRule 0.. 
 * provision 1.. MS
 * provision.period 1.. MS
