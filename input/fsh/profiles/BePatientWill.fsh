@@ -37,10 +37,7 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * source[x] ^short = "The evidence used to support the patient will."
 * source[x] ^definition = "Supporting evidence for the patient will (e.g. a paper signed by the patient to refuse a specific treatment)"
 * source[x] ^comment = "The source can be contained inline (Attachment), referenced directly (Consent), referenced in a consent repository (DocumentReference), or simply by an identifier (Identifier), e.g. a CDA document id.&#xD;&#xA;It is at the discretion of the practitioner whether to include this when available. A consumer SHALL NOT ignore it when available."
-* policyRule 1.. MS
-* policyRule.text = "Belgian policy" (exactly)
-* policyRule.text MS
-* policyRule.text ^comment = "This field is added as a fixed value because in FHIR 4.0.1 this is technically required. It has no functional purpose in Belgium."
+* policyRule 0.. 
 * provision 1.. MS
 * provision.period 1.. MS
 * provision.securityLabel ..0
