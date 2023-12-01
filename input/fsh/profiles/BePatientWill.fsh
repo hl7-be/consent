@@ -20,7 +20,8 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * identifier 0..* MS
 * status 1..1 MS
 * status ^short = "This is the status of the patient will expressed under provision.code ."
-* scope 1..1 MS
+* scope from BeVSPatientWillScope (extensible)
+* scope ^short = "Scope is not explicit in the Belgian context" 
 * category 1..* MS
 * category from BeVSPatientWillCategory (required)
 * patient 1.. MS
