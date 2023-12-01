@@ -18,6 +18,7 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * extension contains BeExtSimpleNote named note 0..1 MS
 * identifier 0..* MS
 * status 1..1 MS
+* status ^short = "This is the status of the patient will expressed under provision.code ."
 * scope 1..1 MS
 * category 1..* MS
 * category from BeVSPatientWillCategory (required)
