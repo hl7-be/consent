@@ -15,7 +15,8 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * ^contact[=].telecom.value = "message-structure@ehealth.fgov.be"
 * ^jurisdiction.coding[0] = $m49.htm#056
 * ^jurisdiction.coding[+] = urn:iso:std:iso:3166#BE
-* extension contains BeExtSimpleNote named note 0..1 MS
+* extension contains BeExtSimpleNote named note 0..1 MS and
+    BeExtRecorder named recorder 1..1 MS
 * identifier 0..* MS
 * status 1..1 MS
 * status ^short = "This is the status of the patient will expressed under provision.code ."
