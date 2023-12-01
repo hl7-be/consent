@@ -46,7 +46,7 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * provision.securityLabel ..0
 * provision.purpose ..0
 * provision.class ..0
-* provision.code MS
+* provision.code 1..1 MS
 * provision.code from BeVSPatientWillCode (required)
 * provision.code ^short = "The actual directive in the will"
 * provision.code ^definition = "The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)"
