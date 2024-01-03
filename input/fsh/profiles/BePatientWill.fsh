@@ -15,10 +15,14 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * ^contact[=].telecom.value = "message-structure@ehealth.fgov.be"
 * ^jurisdiction.coding[0] = $m49.htm#056
 * ^jurisdiction.coding[+] = urn:iso:std:iso:3166#BE
-* identifier MS
-* status MS
-* scope MS
-* category MS
+* extension contains BeExtSimpleNote named note 0..1 MS and
+    BeExtRecorder named recorder 1..1 MS
+* identifier 0..* MS
+* status 1..1 MS
+* status ^short = "This is the status of the patient will expressed under provision.code ."
+* scope from BeVSPatientWillScope (extensible)
+* scope ^short = "Scope is not explicit in the Belgian context" 
+* category 1..* MS
 * category from BeVSPatientWillCategory (required)
 * patient 1.. MS
 * patient only Reference(BePatient)
@@ -27,25 +31,22 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * dateTime 1.. MS
 * dateTime ^short = "The dateTime when the patient will has been recorded"
 * dateTime ^definition = "The date and/or time when the patient will has been recorded"
-* dateTime ^comment = "This is not the time the patient expressed their will, but the time that this patient was recorded.&#xD;&#xA;"
-* performer 1.. MS
+* dateTime ^comment = "This is not the time the patient expressed their will, but the time that this patient will was recorded."
+* performer 0.. MS
 * performer only Reference(BeOrganization or BePatient or BePractitioner or BePractitionerRole or RelatedPerson)
-* performer ^comment = "Commonly, the patient will is expressed by the patient, but for some cases it may be some other person.&#xD;&#xA;"
+* performer ^short = "Commonly, the patient will is expressed by the patient, but for some cases it may be some other person. See representative in the LM"
 * source[x] MS
+* sourceReference only Reference(DocumentReference)
 * source[x] ^short = "The evidence used to support the patient will."
 * source[x] ^definition = "Supporting evidence for the patient will (e.g. a paper signed by the patient to refuse a specific treatment)"
-* source[x] ^comment = "The source can be contained inline (Attachment), referenced directly (Consent), referenced in a consent repository (DocumentReference), or simply by an identifier (Identifier), e.g. a CDA document id.&#xD;&#xA;It is at the discretion of the practitioner whether to include this when available. A consumer SHALL NOT ignore it when available."
-* policyRule 1.. MS
-* policyRule.text = "Belgian policy" (exactly)
-* policyRule.text MS
-* policyRule.text ^comment = "This field is added as a fixed value because in FHIR 4.0.1 this is technically required. It has no functional purpose in Belgium."
+* source[x] ^comment = "The source can be contained inline, or using an URL (Attachment). It is at the discretion of the practitioner whether to include this when available. A consumer SHALL NOT ignore it when available."
+* policyRule 0.. 
 * provision 1.. MS
-* provision.type MS
 * provision.period 1.. MS
 * provision.securityLabel ..0
 * provision.purpose ..0
 * provision.class ..0
-* provision.code MS
+* provision.code 1..1 MS
 * provision.code from BeVSPatientWillCode (required)
 * provision.code ^short = "The actual directive in the will"
 * provision.code ^definition = "The detailed patient will directive (e.g. no hospitalization, bloodtransfusion refusal) (Valueset will be delivered by a working group of NIHDI)"

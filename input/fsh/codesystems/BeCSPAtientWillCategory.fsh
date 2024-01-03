@@ -1,4 +1,4 @@
-CodeSystem: BeCSPAtientWillCategory
+CodeSystem: BeCSPatientWillCategory
 Id: be-cs-patientwill-category
 Title: "Patient Will Category CodeSystem"
 Description: "Patient Will Category CodeSystem"
@@ -15,19 +15,28 @@ Description: "Patient Will Category CodeSystem"
 * ^jurisdiction.coding[0] = $m49.htm#056
 * ^jurisdiction.coding[+] = urn:iso:std:iso:3166#BE
 * ^content = #complete
+* #negativedeclaration
+* #euthanasia
+* #organdonation
+* #lastwill 
+* #bodydonation 
+* #patientwill 
+* #resuscitation 
+* #hospitalisation 
+
 //* ^count = 1
-* #advanced-care-directive "Advanced Care Directive" "General directives expressed voluntarily by the patient"
-* #advanced-care-directive ^designation[0].language = #fr-BE
-* #advanced-care-directive ^designation[=].value = "Volontés diverses"
-* #advanced-care-directive ^designation[+].language = #nl-BE
-* #advanced-care-directive ^designation[=].value = "Verschillende wensen"
-* #research "Research" "Consent to participate in research protocols and / or share results"
-* #research ^designation[0].language = #fr-BE
-* #research ^designation[=].value = "Recherche"
-* #research ^designation[+].language = #nl-BE
-* #research ^designation[=].value = "Onderzoek"
-* #treatment "Treatment" "Specific treatments in the context of resuscitation and / or during hospitalization"
-* #treatment ^designation[0].language = #fr-BE
-* #treatment ^designation[=].value = "Traitement"
-* #treatment ^designation[+].language = #nl-BE
-* #treatment ^designation[=].value = "Behandeling"
+//* #advanced-care-directive "Advanced Care Directive" "General directives expressed voluntarily by the patient"
+//* #advanced-care-directive ^designation[0].language = #fr-BE
+//* #advanced-care-directive ^designation[=].value = "Volontés diverses"
+//* #advanced-care-directive ^designation[+].language = #nl-BE
+//* #advanced-care-directive ^designation[=].value = "Verschillende wensen"
+//* #research "Research" "Consent to participate in research protocols and / or share results"
+//* #research ^designation[0].language = #fr-BE
+//* #research ^designation[=].value = "Recherche"
+//* #research ^designation[+].language = #nl-BE
+//* #research ^designation[=].value = "Onderzoek"
+//* #treatment "Treatment" "Specific treatments in the context of resuscitation and / or during hospitalization"
+//* #treatment ^designation[0].language = #fr-BE
+//* #treatment ^designation[=].value = "Traitement"
+//* #treatment ^designation[+].language = #nl-BE
+//* #treatment ^designation[=].value = "Behandeling"
