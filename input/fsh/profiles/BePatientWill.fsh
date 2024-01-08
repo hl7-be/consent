@@ -40,7 +40,7 @@ Description: "Belgian federal profile for a patient will ONLY in the context of 
 * source[x] ^short = "The evidence used to support the patient will."
 * source[x] ^definition = "Supporting evidence for the patient will (e.g. a paper signed by the patient to refuse a specific treatment)"
 * source[x] ^comment = "The source can be contained inline, or using an URL (Attachment). It is at the discretion of the practitioner whether to include this when available. A consumer SHALL NOT ignore it when available."
-* policyRule 0.. 
+* policyRule ^short = "Provide a short textual description in the .text attribute (see invariant ppc-1)"
 * provision 1.. MS
 * provision.period 1.. MS
 * provision.securityLabel ..0

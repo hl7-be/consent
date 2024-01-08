@@ -10,6 +10,7 @@ Usage: #example
 * dateTime = "2015-11-18"
 * extension[recorder].valueReference.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"
 * extension[recorder].valueReference.identifier.value = "11530231003"
+* policyRule.text = "Belgian policy"
 * provision.period.start = "2020-10-06"
 * provision.code = $be-cs-patientwill-code#dnr1 "Do not resuscitate"
 * provision.code.text = "No resuscitation"
