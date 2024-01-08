@@ -14,6 +14,8 @@ Description: "Patient Will Category CodeSystem"
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^jurisdiction.coding[0] = $m49.htm#056
 * ^jurisdiction.coding[+] = urn:iso:std:iso:3166#BE
+* ^experimental = false
+* ^caseSensitive = true
 * ^content = #complete
 * #negativedeclaration
 * #euthanasia

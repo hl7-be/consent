@@ -15,6 +15,9 @@ Description: "Patient Will Directive CodeSystem. Codes as defined by the NIHDI."
 * ^jurisdiction.coding[0] = $m49.htm#056
 * ^jurisdiction.coding[+] = urn:iso:std:iso:3166#BE
 * ^content = #complete
+* ^caseSensitive = true
+* ^experimental = false
+* ^content = #complete
 //* #euthanasia-request "Euthanasia Request" "Euthanasia request"
 //* #intubation-refusal "Intubation Refusal" "Intubation refusal"
 //* #organ-donation-consent "Organ Donation Consent" "Organ donation consent"

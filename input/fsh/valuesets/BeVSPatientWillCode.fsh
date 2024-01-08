@@ -14,4 +14,5 @@ Description: "Patient Will code Value Set"
 * ^contact[=].telecom.value = "support@be-ehealth-standards.atlassian.net"
 * ^jurisdiction.coding[0] = $m49.htm#056
 * ^jurisdiction.coding[+] = urn:iso:std:iso:3166#BE
+* ^experimental = false
 * include codes from system BeCSPatientWillCode
