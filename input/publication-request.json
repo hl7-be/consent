@@ -1,0 +1,17 @@
+{
+    "package-id": "hl7.fhir.be.patientwill",
+    "version": "1.0.0",
+    "path": "https://www.ehealth.fgov.be/standards/fhir/patientwill/1.0.0",
+    "milestone" : true,
+    "status": "release",
+    "sequence": "Trial Use",
+    "desc": "eHealth FHIR Patient Will Profiles for Belgium",
+    "desccmd": "eHealth FHIR Patient Will Profiles for Belgium",
+    "title": "eHealth FHIR Patient Will Profiles for Belgium",
+    "ci-build" : "http://build.fhir.org/ig/hl7-be/patientwill",
+    "category": "National Base",
+    "introduction": "eHealth FHIR Patient Will Profiles for Belgium",
+	"date": "2024-01-12",
+  "mode": "milestone",
+  "first": true   
+  }
