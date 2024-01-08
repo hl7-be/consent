@@ -165,11 +165,13 @@ menu:
   Home: index.html
   Guidance: guidance.html
   Artifacts:
-    Profiles: artifacts.html
-    Extensions: artifacts.html
-    Value Sets: artifacts.html
+    Data Models: artifacts.html#structures-logical-models
+    Profiles: artifacts.html#structures-resource-profiles
+    Extensions: artifacts.html#structures-extension-definitions
+    Value Sets: artifacts.html#terminology-value-sets
+  Downloads: downloads.html
   Changes: changes.html
-#  Downloads: downloads.html
+  History: https://www.ehealth.fgov.be/standards/fhir/patientwill/history.html
   
 #  History: http://hl7.org/fhir/us/example/history.html
 
