@@ -1,6 +1,6 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-	<p>
+<html:div xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+	<html:p>
     This provides a list of changes to the Patient Will specification since its initial release
-  </p>
+  </html:p>
  
-</div>
+<a name="1.0.0">  </a><p><b>2024-01-12 v1.0.0 - HL7 Belgium Patientwill (Patient Dossier)</b> based on FHIR 4.0.1</p><ul><li><a href="https://github.com/hl7-be/patientwill/releases/tag/v1.0.0">Release notes on GitHub</a></li></ul></html:div>
