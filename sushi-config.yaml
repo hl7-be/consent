@@ -135,6 +135,7 @@ pages:
   guidance.md:
     title: Guidance
   changes.xml:
+  downloads.xml:
 #  examples.xml:
 #    title: Examples Overview
 #    simpleExamples.xml:
