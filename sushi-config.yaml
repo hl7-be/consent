@@ -13,9 +13,9 @@ url: https://www.ehealth.fgov.be/standards/fhir/patientwill
 name: BePatientwill
 title: "HL7 Belgium Patientwill (Patient Dossier)"
 description: Belgian Patient profiles
-status: draft
+status: active
 license: CC0-1.0
-date: 2020-02-26
+date: 2024-01-12
 version: 1.0.0
 releaseLabel: STU
 
@@ -40,14 +40,14 @@ copyrightYear: 2021+
 publisher:
   name: eHealth Platform
   url: http://www.ehealth.fgov.be/
-  email: message-structure@ehealth.fgov.be
+  email: support@be-ehealth-standards.atlassian.net
 
 # ContactDetail is required by the template.
 contact:
   - name: Message Structure
     telecom:
       - system: email
-        value: message-structure@ehealth.fgov.be
+        value: support@be-ehealth-standards.atlassian.net
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
